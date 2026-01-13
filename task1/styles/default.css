@@ -1,0 +1,104 @@
+/* Reset aman */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../assets/fonts/PlusJakartaSans.ttf') format('truetype');
+}
+
+/* Spacing global */
+body {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+/* Container card */
+.card {
+  width: 100%;
+  max-width: 700px;
+  padding: 16px;
+  margin: 40px auto;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 5px 5px #888888;
+  background-color: #fff;
+}
+
+/* Label & input wrapper */
+.label-insert {
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  gap: 6px;
+}
+
+/* button wrapper */
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+/* Input */
+input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* button */
+button {
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* error text */
+.error-text {
+  position: absolute;
+  line-height: 1;
+  font-size: 12px;
+  color: red;
+  bottom: -18px;
+  visibility: hidden;
+}
+
+.error-text.active {
+  visibility: visible;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .card {
+    margin: 24px 16px;
+    padding: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .card {
+    margin: 16px 12px;
+    padding: 12px;
+    box-shadow: 3px 3px #888888;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

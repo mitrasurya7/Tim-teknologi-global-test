@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task1</title>
+    <link rel="stylesheet" href="./styles/default.css" />
+  </head>
+  <body>
+    <section class="card">
+      <h2 style="margin-bottom: 10px">Selamat Datang Di Halaman Register</h2>
+      <p>Silahkan isi data user di bawah ini sesuai kebutuhan</p>
+      <form id="registerForm">
+        <div class="label-insert">
+          <label>Fullname</label>
+          <input type="text" name="name" id="name" />
+          <small id="nameError" class="error-text"></small>
+        </div>
+        <div class="label-insert">
+          <label>Email</label>
+          <input type="email" name="email" id="email"/>
+          <small id="emailError" class="error-text"></small>
+        </div>
+        <div class="label-insert">
+          <label>Password</label>
+          <input type="password" name="password" id="password" />
+          <small id="passwordError" class="error-text"></small>
+        </div>
+        <div class="label-insert">
+          <label>Repeat Password</label>
+          <input type="password" name="repeat-password" id="repeat-password" />
+          <small id="repeatPasswordError" class="error-text"></small>
+        </div>
+        <div class="button-wrapper">
+          <button type="submit">Register</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+  </body>
+  <script src="./js/default.js" ></script>
+</html>
